@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Custom Properties*/
+
+:root {
+    --font-fam: 'Source Sans Pro', 'Sans-Serif';
+
+    --font-weight: 300;
+    --font-bold: 900;
+
+    --clr-light:rgb(177, 221, 241);
+    --clr-dark: rgb(53, 55, 61);
+    --clr-accent:lightblue;
+
+    --fontsize-h1: 3rem;
+    --fontsize-h2: 2.25rem;
+    --fontsize-h3: 1.25rem;
+}
+
+header {
+    background-color: var(--clr-dark);
+}
+
+body {
+ background-color: white;
+ color: var(--clr-dark);
+ margin: 0;
+ font-family: var(--font-fam);
+ line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+h1 {
+    font-size: var(--fontsize-h1);
+background-color: var(--clr-accent);
+}
+
+h2 {
+    font-size: var(--fontsize-h2);
+}
+
+h3 {
+    font-size: var(--fontsize-h3);
+    background-color: var(--clr-accent);
+    font-weight: var(--font-weight);
+    font-family: var(--font-fam);
+}
+
+a {
+  
+}
+
+.nav-list ul {
+    
+}
+
+.content {
+
+
+}
+
+p {
+
+
+}
+
+.card {
+    border: 2px var(--clr-accent) solid;
+}
+
+.social-list {
+    display: flex;
+    text-decoration: underline;
+    text-align: center;
+    justify-content: space-evenly;
+}
