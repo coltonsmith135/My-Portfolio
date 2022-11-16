@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /*Custom Properties*/
@@ -19,8 +21,45 @@
     --fontsize-h3: 1.25rem;
 }
 
-header {
+.header {
     background-color: var(--clr-dark);
+   padding:10px 0;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: var(--fontsize-h1);
+    font-weight: var(--font-weight);
+    font-family: var(--font-fam);
+    background-color: var(--clr-accent);
+    width: 400px;
+    padding-left: 100px;
+}
+
+.header nav {
+    padding-top: 20px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--font-fam);
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    border-bottom: 5px solid var(--clr-accent);
+    
+}
+
+.stripes {
+background-image: url(../images/Striping.png);
+width: 100%;
+height: 200px;
+
 }
 
 body {
@@ -31,54 +70,81 @@ body {
  line-height: 1.5;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+
+.info {
+    border-right: 5px solid var(--clr-dark);
+    padding-bottom: 75px;
+    font-weight: var(--font-bold);
+    width: 125px;
+    position: relative;
+    left: 200px;
 }
 
+ .about-me h2 {
+    display: inline-block;
+    border-right: 5px solid var(--clr-dark);
+    padding-right: 10px;
+    position: relative;
+    left: 250px;
+ }
 
+ .about-me article p {
+   display: inline-block;
+   position: relative;
+   left: 5
 
-h1 {
-    font-size: var(--fontsize-h1);
-background-color: var(--clr-accent);
-}
-
+ }
 h2 {
     font-size: var(--fontsize-h2);
 }
 
-h3 {
-    font-size: var(--fontsize-h3);
-    background-color: var(--clr-accent);
-    font-weight: var(--font-weight);
-    font-family: var(--font-fam);
-}
 
-a {
-  
-}
-
-.nav-list ul {
+.work {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     
 }
 
+.work img {
+    float: right;
+    border: 4px solid var(--clr-accent);
+}
+
+.box {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+
+
+.article img {
+ width: 300px;
+ border: 5px solid var(--clr-accent);
+ height: 100px;
+}
+
+
+
+
+a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: var(--clr-accent);
+    text-decoration: none;
+}
+
 .content {
-
-
+    background-color: var(--clr-accent);
+    width: 175px; 
+    height: fit-content;
+    margin: 3px;
 }
 
-p {
 
-
-}
-
-.card {
-    border: 2px var(--clr-accent) solid;
-}
 
 .social-list {
-    display: flex;
-    text-decoration: underline;
-    text-align: center;
-    justify-content: space-evenly;
+ 
 }
